@@ -36,6 +36,12 @@ GLOBAL
 CABEZOTE
 =============================================*/
 
+#nav{
+	background: white;
+	position: fixed;
+	z-index: 10;
+}
+
 header #logotipo{
 	text-align: center;
 	padding:20px;
@@ -55,9 +61,11 @@ SLIDESHOW
 
 #slide{
 	position:relative;
-	margin:auto;
+    margin: auto;
+	padding: 7% 0 0 0;
 	width:100%;
 	overflow: hidden;
+	background: white;
 }
 
 #slide ul{
@@ -149,6 +157,7 @@ GALERIA
 	position:relative;
 	margin:auto;
 	width:100%;
+	background: white;
 }
 
 #galeria ul{
@@ -169,6 +178,61 @@ GALERIA
 #galeria ul li img{
 	width:100%;
 }
+
+/*=============================================
+EFECTO SCROLL
+=============================================*/
+
+
+#fotoFondo{
+	position:fixed;
+	width:100%;
+	height:100%;
+	z-index:-10;
+	background: url(./02.galeria/img/slide/slide03.jpg);
+	background-size: cover;
+}
+
+#scroll{
+	padding:40px;
+}
+
+#scroll article aside{
+	border:1px solid silver;
+	margin:10px auto;
+	position:relative;
+	background:white;
+	height:auto;
+	overflow: hidden;
+}
+
+#scroll article aside img{
+	width:100%;
+	border:5px solid white;
+}
+
+#scroll article aside h1{
+	font-size:30px;
+	padding:10px 20px;
+	color:#666;
+}
+
+#scroll article aside p{
+	font-size:14px;
+	padding:0px 20px;
+}
+
+#scroll article aside button{
+	float:right;
+	margin:20px;
+	font-size:12px;
+	border:0px;
+	background:#333;
+	color:white;
+	padding:10px 20px;
+	cursor:pointer;
+}
+
 
 /*=============================================
 PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
