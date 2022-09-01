@@ -32,6 +32,17 @@ GLOBAL
 	padding:0px;
 }
 
+h1.titulos{
+	background: white;
+	text-align: center;
+	color: #666;
+	font-weight: 100;
+}
+h1.titulos hr{
+	margin: 20px;
+	border: 1px solid #ddd
+}
+
 /*=============================================
 CABEZOTE
 =============================================*/
