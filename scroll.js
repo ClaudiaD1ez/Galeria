@@ -9,10 +9,12 @@ let ps = {
     posicionScroll: 0,
     articulos: document.querySelectorAll("#scroll article"),
     cajaScroll: document.querySelector("#scroll"),
+    nav: document.querySelector("#nav"),
     botones: document.querySelectorAll("nav ul li a"),
     ruta: null,
     intervalo: null,
-    destinoScroll: 0
+    destinoScroll: 0,
+    padding: 120 // propiedad necesaria para que se nos muestre el titulo de las secciones que buscamos en el navBar
 }
 
 //////////////////////// METODOS SCROLL
@@ -56,7 +58,7 @@ let ms = {
 
         ps.ruta = ruta.target.getAttribute("href");
 
-        ps.destinoScroll = document.querySelector(ps.ruta).offsetTop;
+        ps.destinoScroll = document.querySelector(ps.ruta).offsetTop - ps.padding;
 
         ps.intervalo = setInterval(function(){
 
