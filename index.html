@@ -33,7 +33,12 @@
                 <br>
             </div>
 
-            <nav class="col-lg-6 col-md-7 col-sm-9 col-xs-12">
+            <div id="btnMovil" class="col-lg-0 col-md-0 col-sm-0 col-xs-12">
+
+                <span class="fa fa-bars"></span>
+            </div>
+
+            <nav class="col-lg-6 col-md-7 col-sm-9 col-xs-0">
 
                 <ul>
                     <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#slide">Inicio</a></li>
@@ -241,11 +246,80 @@
                 </article>
             </div>
 
+                    <!--------------------------------------------------------- FORMULARIO ------------------------------------------------------->
+
+            <h1 id="InicioFormulario" class="row titulos">
+                <hr> Formulario <hr>
+            </h1>
+
+            <div id="formulario" class="row">
+
+                <form method="post" onsubmit="return mf.validarFormulario()">
+
+                    <h1>Ingresar datos</h1>
+
+                    <label for="nombre">Nombre de usuario: <span class="obligatorio">*Campo Obligatorio</span> </label>
+                    <input class="validar" id="nombre" type="text" placeholder="Minimo 2 caracteres maximo 6">
+
+                    <label for="password">Contraseña: <span class="obligatorio">*Campo Obligatorio</span> </label>
+                    <input class="validar" id="password" type="password" maxlength="15" placeholder="Minimo 8 caracteres, mayuscula, minuscula y caracteres especiales">
+
+                    <label for="email">Correo electrónico: <span class="obligatorio">*Campo Obligatorio</span></label>
+                    <input id="email" class="validar" type="email" placeholder="Escriba su correo correctamente" required>
+
+
+
+
+                    <label for="color">Elija su color</label>
+                    <select id="color">
+                        <option>Seleccione</option>
+                        <option>Amarillo</option>
+                        <option>Rojo</option>
+                        <option>Azul</option>
+                    </select>
+        
+                    <br>
+        
+                    <hr>
+        
+                    <p>Seleccione Animal:</p>
+                    <input type="checkbox" id="perro">
+                    <label for="perro" class="box">Perro</label>
+                    <input type="checkbox" id="gato">
+                    <label for="gato" class="box">Gato</label>
+                    <input type="checkbox" id="conejo">
+                    <label for="conejo" class="box">Conejo</label>
+
+                    <hr>
+
+                    <p>Seleccione metodo de pago:</p>
+                    <input type="radio" id="efectivo" name="pago" checked>
+                    <label for="efectivo">Efectivo</label>
+                    <input type="radio" id="credito" name="pago">
+                    <label for="credito">Crédito</label>
+
+                    <br>
+                    <hr>
+
+                    <label for="mensaje"></label>
+                    <textarea id="mensaje" rows="10" required></textarea>
+
+                    <input type="checkbox" id="terminos">
+                    <label for="terminos">Acepto terminos y condiciones</label>
+
+                    <label id="labelEnviar"></label>
+                    <input type="submit" value="Enviar">
+
+                </form>
+
+            </div>
+
     </div>
 
     <script src="./slide.js"></script>
     <script src="./galeria.js"></script>
     <script src="./scroll.js"></script>
+    <script src="./form.js"></script>
 
 
 </body>
