@@ -47,7 +47,11 @@ let ms = {
 
             for(let i=0; i < ps.articulos.length; i++){
 
-                ps.articulos[i].style.marginLeft = ps.posicionScroll/15 - 100 +  "%"
+                if(window.matchMedia("(min-width:768px)").matches){
+
+                    ps.articulos[i].style.marginLeft = ps.posicionScroll/15 - 100 +  "%"
+                }
+
             }
         }
     },
